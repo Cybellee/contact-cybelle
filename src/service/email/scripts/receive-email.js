@@ -1,6 +1,6 @@
-(function() {
+(() => {
     emailjs.init({
-        publicKey: "oFxQSa31QMcD-3UX7",
+        publicKey: "wS-7Nwl-QCq28SNKF",
     })
 })();
 
@@ -8,10 +8,10 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault()
 
 
-    emailjs.sendForm("service_y960qy4", "template_re5j3nu", this)
+    emailjs.sendForm("service_ahlrcdg", "template_m4clzq2", this)
     .then(
-        function() {
-            console.log("success!")
+        () => {
+            console.log("Success!")
             alert("Email enviado com sucesso")
         }
     ), function(err) {
